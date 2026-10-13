@@ -13,7 +13,7 @@ st.markdown(" ## Vectores: Fuerzas en equilibrio ")
 with st.sidebar:
     st.markdown("Elige la magnitud del vector $ \overrightarrow{F_1}$ ")
     F1_mag = st.number_input("magnitud:",0.0000)
-    st.markdown("Elige la magnitud y dirección del vector $ \overrightarrow{F_2} $")
+    st.markdown("Elige la magnitud y dirección del vector $$ \overrightarrow{F_2} $$")
     
     F2_mag = st.number_input("magnitud de F2:",0.0000)
     F2_theta = st.number_input("ángulo de F2:",0.0000) 
