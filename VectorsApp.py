@@ -114,12 +114,12 @@ with col1:
 #    if btn == True:
       #  plt.savefig('plot.png')
 
-str1="#### $ \vec{F}_1 = $ " + " {:.3f}".format(F1x) + " $ i $"
+str1=r"#### $ \vec{F}_1 = $ " + " {:.3f}".format(F1x) + " $ i $"
 strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'
-str2="#### $ \vec{F}_2 = $ " + " {:.3f}".format(F2x) + " $ i $" + " + " + " {:.3f}".format(F2y) + " $ j $"
-str3="#### $ \vec{F}_3 = $ " + " {:.3f}".format(F3x) + " $ i $" + " + " + " {:.3f}".format(F3y) + " $ j $"
-str4="#### $ \vec{F}_R = \vec{F}_2 + \vec{F}_3 = $ " + " {:.3f}".format(FRx) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $"
-str5="#### $ \vec{F}_1 + \vec{F}_R = $" + " {:.3f}".format(FRx+F1x) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $ "
+str2=r"#### $ \vec{F}_2 = $ " + " {:.3f}".format(F2x) + " $ i $" + " + " + " {:.3f}".format(F2y) + " $ j $"
+str3=r"#### $ \vec{F}_3 = $ " + " {:.3f}".format(F3x) + " $ i $" + " + " + " {:.3f}".format(F3y) + " $ j $"
+str4=r"#### $ \vec{F}_R = \vec{F}_2 + \vec{F}_3 = $ " + " {:.3f}".format(FRx) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $"
+str5=r"#### $ \vec{F}_1 + \vec{F}_R = $" + " {:.3f}".format(FRx+F1x) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $ "
 
 with col2:
     st.write('    ')
