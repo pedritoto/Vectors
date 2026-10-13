@@ -114,20 +114,36 @@ with col1:
 #    if btn == True:
       #  plt.savefig('plot.png')
 
-str1=r"#### $ \vec{F}_1 = $ " + " {:.3f}".format(F1x) + " $ i $"
-strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'
-str2=r"#### $ \vec{F}_2 = $ " + " {:.3f}".format(F2x) + " $ i $" + " + " + " {:.3f}".format(F2y) + " $ j $"
-str3=r"#### $ \vec{F}_3 = $ " + " {:.3f}".format(F3x) + " $ i $" + " + " + " {:.3f}".format(F3y) + " $ j $"
-str4=r"#### $ \vec{F}_R = \vec{F}_2 + \vec{F}_3 = $ " + " {:.3f}".format(FRx) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $"
-str5=r"#### $ \vec{F}_1 + \vec{F}_R = $" + " {:.3f}".format(FRx+F1x) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $ "
+
+str1 = rf"#### $\vec{{F}}_1 = {F1x:.3f}\, i$"
+str2 = rf"#### $\vec{{F}}_2 = {F2x:.3f}\, i + {F2y:.3f}\, j$"
+str3 = rf"#### $\vec{{F}}_3 = {F3x:.3f}\, i + {F3y:.3f}\, j$"
+str4 = rf"#### $\vec{{F}}_R = \vec{{F}}_2 + \vec{{F}}_3 = {FRx:.3f}\, i + {FRy:.3f}\, j$"
+str5 = rf"#### $\vec{{F}}_1 + \vec{{F}}_R = {FRx+F1x:.3f}\, i + {FRy:.3f}\, j$"
+
+
+#str1="#### $ \vec{F}_1 = $ " + " {:.3f}".format(F1x) + " $ i $"
+#strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'
+#str2="#### $ \vec{F}_2 = $ " + " {:.3f}".format(F2x) + " $ i $" + " + " + " {:.3f}".format(F2y) + " $ j $"
+#str3="#### $ \vec{F}_3 = $ " + " {:.3f}".format(F3x) + " $ i $" + " + " + " {:.3f}".format(F3y) + " $ j $"
+#str4="#### $ \vec{F}_R = \vec{F}_2 + \vec{F}_3 = $ " + " {:.3f}".format(FRx) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $"
+#str5="#### $ \vec{F}_1 + \vec{F}_R = $" + " {:.3f}".format(FRx+F1x) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $ "
 
 with col2:
-    st.write('    ')
-    st.write('    ')
-    st.write('    ')
-    st.write('    ')
-    st.write('    ')    
-    st.markdown(""" 
+    st.markdown("### Vectores de las fuerzas")
+    st.markdown(str1)
+    st.markdown(str2)
+    st.markdown(str3)
+    st.markdown(str4)
+    st.markdown(str5)
+
+#with col2:
+#    st.write('    ')
+#    st.write('    ')
+#    st.write('    ')
+#    st.write('    ')
+#    st.write('    ')    
+#    st.markdown(""" 
     ### Vectores de las fuerzas 
     
 
