@@ -11,13 +11,13 @@ st.markdown(" ## Vectores: Fuerzas en equilibrio ")
 
 
 with st.sidebar:
-    st.markdown("Elige la magnitud del vector $ \overrightarrow{F_1}$ ")
+    st.markdown("Elige la magnitud del vector $$ \overrightarrow{F_1}$$ ")
     F1_mag = st.number_input("magnitud:",0.0000)
     st.markdown("Elige la magnitud y dirección del vector $$ \overrightarrow{F_2} $$")
     
     F2_mag = st.number_input("magnitud de F2:",0.0000)
     F2_theta = st.number_input("ángulo de F2:",0.0000) 
-    st.markdown("Elige la magnitud y dirección del vector $ \overrightarrow{F_3} $")
+    st.markdown("Elige la magnitud y dirección del vector $$ \overrightarrow{F_3} $$")
     
     F3_mag = st.number_input("magnitud de F3:",0.0000)
     F3_theta = st.number_input("ángulo de  F3:",0.0000)
@@ -92,18 +92,18 @@ with col1:
     if F1_mag != 0.0:
         ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'darkgreen',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l1,lw=2.0,zorder=3)
         ax.text(-1.85,1.6,r'  ',fontsize = fntz, color='darkgreen')  
-        ax.text(1420,1050,r'$ \overrightarrow{F_1} $',fontsize = fntz, color='darkgreen',zorder=7,transform=IdentityTransform()) 
+        ax.text(1420,1050,r'$$ \overrightarrow{F_1} $$',fontsize = fntz, color='darkgreen',zorder=7,transform=IdentityTransform()) 
     if F2_mag !=0.0 and F2_theta != 0.0:    
         ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l2,lw=2.0,zorder=4)
-        #ax.text(-1.7,1.454,r'$ \overrightarrow{F_2} $',fontsize = fntz, color='red') 
-        ax.text(1420,850,r'$ \overrightarrow{F_2} $',fontsize = fntz, color='red',zorder=7,transform=IdentityTransform()) 
+        #ax.text(-1.7,1.454,r'$$ \overrightarrow{F_2} $$',fontsize = fntz, color='red') 
+        ax.text(1420,850,r'$$ \overrightarrow{F_2} $$',fontsize = fntz, color='red',zorder=7,transform=IdentityTransform()) 
     if F3_mag !=0.0 and F3_theta != 0.0:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0,zorder=5)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0,zorder=6) 
-        #ax.text(-1.54,1.442,r'$ \overrightarrow{F_3} $',fontsize = fntz, color='blue') 
-        #ax.text(-1.38,1.465,r'$ \overrightarrow{F_R} $',fontsize = fntz, color='darkorange') 
-        ax.text(1420,550,r'$ \overrightarrow{F_3} $',fontsize = fntz, color='blue',zorder=7,transform=IdentityTransform())
-        ax.text(1420,350,r'$ \overrightarrow{F_R} $',fontsize = fntz, color='darkorange',zorder=7,transform=IdentityTransform()) 
+        #ax.text(-1.54,1.442,r'$$ \overrightarrow{F_3} $$',fontsize = fntz, color='blue') 
+        #ax.text(-1.38,1.465,r'$$ \overrightarrow{F_R} $$',fontsize = fntz, color='darkorange') 
+        ax.text(1420,550,r'$$ \overrightarrow{F_3} $$',fontsize = fntz, color='blue',zorder=7,transform=IdentityTransform())
+        ax.text(1420,350,r'$$ \overrightarrow{F_R} $$',fontsize = fntz, color='darkorange',zorder=7,transform=IdentityTransform()) 
     st.pyplot(fig)
     plt.savefig('plot.png')
     plt.show()
@@ -114,12 +114,12 @@ with col1:
 #    if btn == True:
       #  plt.savefig('plot.png')
 
-str1="#### $ \overrightarrow{F_1} = $ " + " {:.3f}".format(F1x) + " $ i $"
+str1="#### $$ \overrightarrow{F_1} = $$ " + " {:.3f}".format(F1x) + " $ i $"
 strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'
-str2="#### $ \overrightarrow{F_2} = $ " + " {:.3f}".format(F2x) + " $ i $" + " + " + " {:.3f}".format(F2y) + " $ j $"
-str3="#### $ \overrightarrow{F_3} = $ " + " {:.3f}".format(F3x) + " $ i $" + " + " + " {:.3f}".format(F3y) + " $ j $"
-str4="#### $ \overrightarrow{F_R} = \overrightarrow{F_2} + \overrightarrow{F_3} = $ " + " {:.3f}".format(FRx) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $"
-str5="#### $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.3f}".format(FRx+F1x) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $ "
+str2="#### $$ \overrightarrow{F_2} = $$ " + " {:.3f}".format(F2x) + " $$ i $$" + " + " + " {:.3f}".format(F2y) + " $$ j $$"
+str3="#### $$ \overrightarrow{F_3} = $$ " + " {:.3f}".format(F3x) + " $$ i $$" + " + " + " {:.3f}".format(F3y) + " $$ j $$"
+str4="#### $$ \overrightarrow{F_R} = \overrightarrow{F_2} + \overrightarrow{F_3} = $$ " + " {:.3f}".format(FRx) + " $$ i $$" + " + " + " {:.3f}".format(FRy) + " $$ j $$"
+str5="#### $$ \overrightarrow{F_1} + \overrightarrow{F_R} = $$" + " {:.3f}".format(FRx+F1x) + " $$ i $$" + " + " + " {:.3f}".format(FRy) + " $$ j $$ "
 
 with col2:
     st.write('    ')
