@@ -143,22 +143,22 @@ with col2:
 #    st.write('    ')
 #    st.write('    ')
 #    st.write('    ')    
-    st.markdown(""" 
+#    st.markdown(""" 
     ### Vectores de las fuerzas 
     
 
     
     
-    """)
+#    """)
 
-    if F1_mag != 0.0:
-        st.markdown(str1)   
-    if F2_mag !=0.0 and F2_theta != 0.0:
-        st.markdown(str2)   
-    if F3_mag !=0.0 and F3_theta != 0.0:
-        st.markdown(str3)
-        st.markdown(str4)
-        st.markdown(str5)
+#    if F1_mag != 0.0:
+#        st.markdown(str1)   
+#    if F2_mag !=0.0 and F2_theta != 0.0:
+#        st.markdown(str2)   
+#    if F3_mag !=0.0 and F3_theta != 0.0:
+#        st.markdown(str3)
+#        st.markdown(str4)
+#        st.markdown(str5)
 
 with open("plot.png", "rb") as file:
     btn = st.download_button(
